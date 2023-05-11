@@ -1,5 +1,5 @@
 # Uni-Encoder
-This code can be used to reproduce the results of *Uni-Encoder: A Fast and Accurate Response Selection Paradigm for Generation-Based Dialogue Systems* on PersonaChat, Ubuntu V1, Ubuntu V2, and Douban datasets. (Our paper has been accepted by the Findings of ACL 2023.)
+This code can be used to reproduce the results of *Uni-Encoder: A Fast and Accurate Response Selection Paradigm for Generation-Based Dialogue Systems* on PersonaChat, Ubuntu V1, Ubuntu V2, and Douban datasets. (Our [paper](https://arxiv.org/abs/2106.01263) has been accepted by the Findings of ACL 2023.)
 
 
 ![alt text](PNG/uni_results.png)

@@ -1,5 +1,5 @@
 # Uni-Encoder
-This code can be used to reproduce the results of *Uni-Encoder: A Fast and Accurate Response Selection Paradigm for Generation-Based Dialogue Systems* on PersonaChat, Ubuntu V1, Ubuntu V2, and Douban datasets. (Our [paper](https://arxiv.org/abs/2106.01263) has been accepted by the Findings of ACL 2023.)
+This code can be used to reproduce the results of *Uni-Encoder: A Fast and Accurate Response Selection Paradigm for Generation-Based Dialogue Systems* on PersonaChat, Ubuntu V1, Ubuntu V2, and Douban datasets. (Our [paper](https://arxiv.org/abs/2106.01263) has been accepted to the Findings of ACL 2023.)
 
 
 ![alt text](PNG/uni_results.png)
@@ -8,8 +8,6 @@ This code can be used to reproduce the results of *Uni-Encoder: A Fast and Accur
 The code is implemented using python 3.8 and PyTorch v1.8.1(please choose the correct command that match your CUDA version from [PyTorch](https://pytorch.org/get-started/previous-versions/))
 
 Anaconda / Miniconda is recommended to set up this codebase.
-
-There are only minor differences between the model files named "uni_encoder.py" in different directories, e.g., the pre-trained model used for the Douban corpus is "Bert-base-Chinese", not the English version.
 
 You may use the command below(cuda 11+):
 ```shell

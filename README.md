@@ -62,7 +62,7 @@ During training, the model is saved after each epoch, and you can find the "xxx.
 ## Inference 
 - We have uploaded standardized data and model checkpoints. Please refer to the "Training" section to download the processed dataset. Checkpoints download instructions are provided below.
 
-- In the following command, ```--model_checkpoint``` specifies the path of the checkpoint. If you want to perform inference on your trained model, you can modify the path to your own model folder.
+- In the following command, ```--model_checkpoint``` specifies the path of the checkpoint. If you want to perform inference on your trained model, you can modify the path to your **own model folder**.
 
 ### PersonChat
 

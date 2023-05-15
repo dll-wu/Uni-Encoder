@@ -53,7 +53,7 @@ bash run_dist.sh
 
 You may adjust the batch size and the number of GPUs based on your device. Training data will be tokenized and cached after the first run, and you can accelerate subsequent runs by adding the ```--dataset_cache``` option.
 
-If you want to finetune the post-trained [BERT-FP(Han et al.)](https://aclanthology.org/2021.naacl-main.122/) model, you need to first download its checkpoint checkpoint from [here](https://github.com/hanjanghoon/BERT_FP) and place it in the "post_training_model" folder. Then use ```--use_post_training bert_fp```.
+If you want to finetune the post-trained [BERT-FP(Han et al.)](https://aclanthology.org/2021.naacl-main.122/) model, you need to first download its checkpoint from [here](https://github.com/hanjanghoon/BERT_FP) and place it in the "post_training_model" folder. Then use ```--use_post_training bert_fp```.
 
 During training, the model is saved after each epoch, and you can find the "xxx.pt" model and the "training.log" file containing the details of the training in the "runs" directory. If an error occurs, the error message will be displayed in the "logs.out" file.
 

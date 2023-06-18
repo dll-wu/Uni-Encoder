@@ -25,10 +25,10 @@ pip install -r requirements.txt
 Training codes for the Ubuntu (v1 and v2), Persona-Chat and Douban datasets are available in separate folders, all sharing a common model file, `uni_ecoder.py`.
 
 Standardized data for each dataset can be downloaded from the following links:
-- [Ubuntu v1](https://westlakeu-my.sharepoint.com/:u:/g/personal/hehongliang_westlake_edu_cn/EXejdCChVONFv6R_DgvmyR4BRSbUdNoA8qm_-FKU9OvUNA?e=baIYPK) (Please put the dataset in the "ubuntu/data".)
-- [Ubuntu v2](https://westlakeu-my.sharepoint.com/:u:/g/personal/hehongliang_westlake_edu_cn/ETGtMXxxnzVJsOMZs5NHMj8B4MJEKBJmvwkrVMzY14JeoA?e=LvrfSk) (Please put the dataset in the "ubuntu/data".)
-- [Persona Chat](https://westlakeu-my.sharepoint.com/:u:/g/personal/hehongliang_westlake_edu_cn/EY1dhGDfvkVMoVeou2iDfWIBwa70WiifBGIULatHk4j3UQ?e=UGBXJs) (Please put the dataset in the "persona-chat/data".)
-- [Douban](https://westlakeu-my.sharepoint.com/:u:/g/personal/hehongliang_westlake_edu_cn/EcnXo_kdxixDu6l9Kd0yhFoBhXbQlxEr9W73K9Ha2EMVHQ?e=ktxwrF) (Please put the dataset in the "douban/data".)
+- [Ubuntu v1](https://pan.baidu.com/s/10MeOilheRRfxdy-5LajQrA?pwd=3rgc) (Please put the dataset in the "ubuntu/data".)
+- [Ubuntu v2](https://pan.baidu.com/s/1rtsigkgmjm-A5lYAyw6Nyw?pwd=pp5v) (Please put the dataset in the "ubuntu/data".)
+- [Persona Chat](https://pan.baidu.com/s/1EEvQGn5nS5VoKTV54HTlDw?pwd=j8de) (Please put the dataset in the "persona-chat/data".)
+- [Douban](https://pan.baidu.com/s/1EEvQGn5nS5VoKTV54HTlDw?pwd=j8de) (Please put the dataset in the "douban/data".)
 
 Each dataset folder includes its corresponding training script and other utilities. For example, in the `ubuntu` folder, there is a `run_dist.sh` file:
 ```bash

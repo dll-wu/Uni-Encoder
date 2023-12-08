@@ -2,7 +2,9 @@
 
 *Uni-Encoder* is a state-of-the-art response selection paradigm for generation-based dialogue systems. It has been tested on PersonaChat, Ubuntu V1, Ubuntu V2, and Douban datasets, achieving high accuracy and fast response times. Our [paper](https://arxiv.org/abs/2106.01263) has been accepted to the Findings of ACL 2023. This repo contains the implementation of Uni-Encoder and procedures to reproduce the experimental results.
 
-![alt text](PNG/uni_results.png)
+<p align="center" width="100%">
+      <img src="PNG/uni_results.png" alt="Evaluation results of Uni-Encoder on four benchmarks." style="width: 86%; min-width: 200px; display: block; margin: auto;">
+</p>
 
 ## Dependencies
 The code is implemented using python 3.8 and PyTorch v1.8.1 (please choose the correct command that match your CUDA version from [PyTorch](https://pytorch.org/get-started/previous-versions/))
@@ -25,10 +27,10 @@ pip install -r requirements.txt
 Training codes for the Ubuntu (v1 and v2), Persona-Chat and Douban datasets are available in separate folders, all sharing a common model file, `uni_ecoder.py`.
 
 Standardized data for each dataset can be downloaded from the following links:
-- [Ubuntu v1](https://pan.baidu.com/s/10MeOilheRRfxdy-5LajQrA?pwd=3rgc) (Please put the dataset in the "ubuntu/data".)
-- [Ubuntu v2](https://pan.baidu.com/s/1rtsigkgmjm-A5lYAyw6Nyw?pwd=pp5v) (Please put the dataset in the "ubuntu/data".)
-- [Persona Chat](https://pan.baidu.com/s/1EEvQGn5nS5VoKTV54HTlDw?pwd=j8de) (Please put the dataset in the "persona-chat/data".)
-- [Douban](https://pan.baidu.com/s/1EEvQGn5nS5VoKTV54HTlDw?pwd=j8de) (Please put the dataset in the "douban/data".)
+- **Ubuntu V1** [[HuggingFace](https://huggingface.co/datasets/ChiyuSONG/Uni-Encoder/blob/main/UbuntuV1_data.json) / [Baidu Netdisk](https://pan.baidu.com/s/10MeOilheRRfxdy-5LajQrA?pwd=3rgc)] (Please put the dataset in the "ubuntu/data".)
+- **Ubuntu V2** [[HuggingFace](https://huggingface.co/datasets/ChiyuSONG/Uni-Encoder/blob/main/UbuntuV2_data.json) / [Baidu Netdisk](https://pan.baidu.com/s/1rtsigkgmjm-A5lYAyw6Nyw?pwd=pp5v)] (Please put the dataset in the "ubuntu/data".)
+- **Persona Chat** [[HuggingFace](https://huggingface.co/datasets/ChiyuSONG/Uni-Encoder/blob/main/PersonaChat.json) / [Baidu Netdisk](https://pan.baidu.com/s/1EEvQGn5nS5VoKTV54HTlDw?pwd=j8de)] (Please put the dataset in the "persona-chat/data".)
+- **Douban** [[HuggingFace](https://huggingface.co/datasets/ChiyuSONG/Uni-Encoder/blob/main/douban.json) / [Baidu Netdisk](https://pan.baidu.com/s/1wVkrUIzz7CPX7neinKRtqQ?pwd=m954)] (Please put the dataset in the "douban/data".)
 
 Each dataset folder includes its corresponding training script and other utilities. For example, in the `ubuntu` folder, there is a `run_dist.sh` file:
 ```bash
@@ -107,3 +109,14 @@ During training, the model is saved after each epoch, and you can find the "xxx.
     # inference on Douban(finetune from the checkpoint given by BERT-FP)
     python test.py --use_post_training bert_fp --model_checkpoint checkpoint_for_Douban_use_bert_FP
     ```
+
+## Citation
+```
+@inproceedings{song2023uni,
+  title={Uni-encoder: A fast and accurate response selection paradigm for generation-based dialogue systems},
+  author={Song, Chiyu and He, Hongliang and Yu, Haofei and Fang, Pengfei and Cui, Leyang and Lan, Zhenzhong},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2023},
+  pages={6231--6244},
+  year={2023}
+}
+```
